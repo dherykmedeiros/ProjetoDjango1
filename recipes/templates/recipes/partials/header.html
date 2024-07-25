@@ -1,0 +1,20 @@
+<header class="main-header-container">
+    <div class="main-header container">
+        <h1>
+            <a class="main-logo" href="{% url 'recipes-home' %}">
+                <i class="fas fa-utensils main-logo-icon"></i> 
+                <span class="main-logo-text"> Recipes</span>    
+            </a>
+        </h1>
+        <div class="header-buttons">
+            {% if user.is_authenticated %}
+                <a class="btn btn-primary" href="{% url 'recipe_create' %}">Add Recipe</a>
+                <a class="btn btn-secondary" href="{% url 'authors:logout' %}">Logout</a>
+            {% else %}
+                <a class="btn btn-primary" href="{% url 'authors:login' %}">Login</a>
+                <a class="btn btn-secondary" href="{% url 'authors:register' %}">Register here</a>
+                <a class="btn btn-primary" href="{% url 'authors:login' %}?next={% url 'recipe_create' %}">Add Recipe</a>
+            {% endif %}
+        </div>
+    </div>
+</header>
