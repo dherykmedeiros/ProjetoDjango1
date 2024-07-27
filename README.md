@@ -2,8 +2,8 @@
 # projetoDjango
 
 Este é um projeto básico de cadastro de usuários desenvolvido com o framework Django. O sistema permite o cadastro de usuários com nome, idade e um ID gerado automaticamente como chave primária.
-Videos de apoio:
-https://youtu.be/TvQAXlbb_WA --> Download do Github
+Videos de apoio: <br>
+https://youtu.be/TvQAXlbb_WA --> Download do Github <br>
 https://youtu.be/-wnJwnY--_8 --> Usando o requirement.txt e rodando a aplicação
 
 ## Funcionalidades
